@@ -16,3 +16,6 @@ Use this as a starting point to complete the WDD 231 personal activity. We will 
 ## Other commands
 
 - `npm run build` to build final files when you are ready to turn in.
+
+## Running Link
+- Here is the link to the site: https://68c998ac297cb62dc865c6e1--inquisitive-cupcake-75269e.netlify.app
