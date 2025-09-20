@@ -95,16 +95,6 @@ img {
   max-width: 100%;
 }
 
-.disclaimer {
-  background-color: var(--bs-white);
-  margin-top: 0;
-}
-
-.disclaimer a:link {
-  color: var(--bs-link-color);
-  text-decoration: underline;
-}
-
 body {
   font-family: var(--bs-body-font-family);
   font-size: 20px;
@@ -177,6 +167,16 @@ a:hover {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.disclaimer {
+  background-color: var(--bs-white);
+  margin-top: 0;
+}
+
+.disclaimer a:link {
+  color: var(--bs-link-color);
+  text-decoration: underline;
 }
 
 /* Flex box for global header */
