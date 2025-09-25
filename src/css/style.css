@@ -99,6 +99,11 @@ body {
   font-family: var(--bs-body-font-family);
   font-size: 20px;
   margin: 0;
+  background-color: var(--bs-white);
+  color: var(--bs-black);
+}
+
+header {
   background-color: var(--bs-black);
 }
 
@@ -110,6 +115,10 @@ a:visited {
 
 a:hover {
   color: var(--bs-link-hover-color);
+}
+
+#main a {
+  color: var(--bs-black);
 }
 
 /* Skip links styling */
@@ -172,6 +181,9 @@ a:hover {
 .disclaimer {
   background-color: var(--bs-white);
   margin-top: 0;
+  color: var(--bs-black);
+  padding: 10px;
+  margin-bottom: 0;
 }
 
 .disclaimer a:link {
@@ -184,6 +196,7 @@ a:hover {
   display: flex;
   justify-content: space-between;
   height: 50px;
+  padding-left: 10px;
 }
 
 .global-header__right {
@@ -238,6 +251,7 @@ a:hover {
 
 .global-nav__section-heading {
   color: white;
+  padding-left: 10px;
 }
 
 .global-nav__split-button button {
@@ -275,9 +289,56 @@ svg {
 
 .banner-title {
   font-size: xx-large;
+  padding-left: 10px;
 }
 
 .banner-subtitle {
   flex: 0 0 150px;
   margin-left: 10px;
+}
+
+/* Main Body */
+#main {
+  padding: 15px;
+  font-family: var(--bs-font-serif);
+}
+
+/* Footer */
+#park-footer {
+  position: relative;
+  font-family: var(--bs-font-serif);
+}
+
+#park-footer img {
+  width: 100%;
+  height: 300px;
+  margin: 0;
+}
+
+#park-footer h3 {
+  text-transform: uppercase;
+}
+
+.contact {
+  position: absolute;
+  top: 8px;
+  left: 15px;
+  font-size: large;
+}
+
+@media only screen and (min-width:630px) {
+  .info {
+    display: flex;
+    padding: 0;
+    justify-content: space-between;
+    align-items: stretch;
+  }
+  .info-card {
+    padding: 10px;
+    flex: 1;
+    margin: 0 5px;
+  }
+  .info-card img {
+    height: auto;
+  }
 }
