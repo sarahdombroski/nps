@@ -186,7 +186,8 @@ a:hover {
   margin-bottom: 0;
 }
 
-.disclaimer a:link {
+.disclaimer a:link,
+.disclaimer a:visited {
   color: var(--bs-link-color);
   text-decoration: underline;
 }
