@@ -1,0 +1,15 @@
+.search-icon, #global-nav-toggle {
+  background-color: var(--bs-black);
+  fill: white;
+  border-style: none;
+}
+
+.global-nav__section-heading {
+  color: white;
+  padding-left: 10px;
+}
+
+.global-nav__split-button button {
+  background-color: black;
+  border-style: none;
+}
