@@ -208,10 +208,10 @@ async function getJson(url) {
   const options = {
     method: "GET",
     headers: {
-      "X-Api-Key": apiKey }}
+      "X-Api-Key": apiKey }};
     
     let data = {};
-    const response = await fetch(url, options);
+    const response = await fetch(baseUrl + url, options);
     
     if(response.ok) {
       data = await response.json();
@@ -221,12 +221,12 @@ async function getJson(url) {
 }
 
 export async function getParkData() {
-  const parkData = await getJson(baseUrl + `parks?parkCode=olym`);
+  const parkData = await getJson('parks?parkCode=olym');
   return parkData.data[0];
 }
 
 export async function getVistorCentersData() {
-  const visitorCentersData = await getJson(baseUrl + `visitorcenters?parkCode=olym`);
+  const visitorCentersData = await getJson('visitorcenters?parkCode=olym');
   return visitorCentersData.data;
 }
 
