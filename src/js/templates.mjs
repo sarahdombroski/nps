@@ -1,3 +1,5 @@
+import spritePath from '../images/sprite.symbol.svg';
+
 export function mediaCardTemplate(info) {
     return `<div class="info-card"><a href="${info.link}"><img src="${info.image}"></a>
     <a href="${info.link}"><h1>${info.name}</h1></a>
@@ -34,4 +36,36 @@ export function footerLayout(data) {
     <h4>Phone:</h4>
     <p>${phoneNumber}</p>
     </section>`;
+}
+
+export function alertLayout(data) {
+    let alertType = '';
+    switch (data.category) {
+        case "Park Closure":
+            alertType = "closure";
+            break;
+        default:
+            alertType = data.category.toLowerCase();
+    }
+
+    return `<li class="alert">
+    <svg class="icon" focusable="false" aria-hidden="true"><use xlink:href="${spritePath}#alert-${alertType}"></use></svg>
+    <div>
+    <h3 class="alert-${alertType}">${data.title}</h1>
+    <p>${data.description}</p></div></li>
+    `;
+}
+
+export function visitorCenterLayout(data) {
+    return `<li class="visitor-center">
+    <h3>${data.name}</h3>
+    <p>${data.description}</p>
+    <p>${data.directionsInfo}</p></li>
+    `;
+}
+
+export function activitiesLayout(data) {
+    return `<li class="activity">
+    <p>${data.name}</p></li>
+    `
 }

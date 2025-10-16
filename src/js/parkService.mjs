@@ -237,3 +237,8 @@ export async function getInfoLinks(data) {
   });
   return updatedImages;
 }
+
+export async function getAlertInfo() {
+  const alertData = await getJson('alerts?parkCode=olym');
+  return alertData.data;
+}

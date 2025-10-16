@@ -1,3 +1,5 @@
+import "../css/style.css";
+import "../css/home.css";
 import { getParkData, getInfoLinks } from "./parkService.mjs";
 import { mediaCardTemplate } from "./templates.mjs";
 import setHeaderFooter from "./setHeaderFooter.mjs";
@@ -13,7 +15,7 @@ function setInfo(info) {
     infoSection.innerHTML = allLayout;
 }
 
-async function init() {
+export async function init() {
     const parkData = await getParkData();
     const parkInfoLinks = await getInfoLinks(parkData);
 
