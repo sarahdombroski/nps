@@ -1,0 +1,70 @@
+.vc-name {
+    font-size: xx-large;
+    padding: 1em;
+    font-weight: normal;
+    margin-bottom: 1em;
+    border-bottom: 1px solid;
+}
+
+.vc-name svg {
+    width: 1em;
+    height: 1em;
+}
+
+.vc-info figure {
+    font-size: .8em;
+    margin: 1em 3em;
+}
+
+.vc-info figcaption > span {
+    display: block;
+    font-size: italic;
+}
+
+.vc-info {
+    border-bottom: 1px solid;
+}
+
+.vc-details-list svg, .vs-gallery svg {
+    width: 1.25rem;
+    height: 1.25rem;
+    margin-right: 1rem;
+    fill: black;
+}
+
+.vc-details-list summary {
+    padding: 7px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+}
+
+.vc-details-list details {
+    border-bottom: 1px solid;
+}
+
+#vcAmenities ul {
+    list-style: none;
+}
+#vcAmenities li {
+    margin-bottom: 1em;
+}
+
+.vc-gallery {
+    font-size: 1.25rem;
+}
+
+.vc-gallery ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+.vc-gallery img {
+    object-fit: cover;
+    object-position: center;
+    height: 256px;
+    width: 256px;
+}

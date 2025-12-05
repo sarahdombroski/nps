@@ -227,6 +227,7 @@ export async function getParkData() {
 
 export async function getVistorCentersData() {
   const visitorCentersData = await getJson('visitorcenters?parkCode=olym');
+  console.log(visitorCentersData.data);
   return visitorCentersData.data;
 }
 
@@ -241,4 +242,9 @@ export async function getInfoLinks(data) {
 export async function getAlertInfo() {
   const alertData = await getJson('alerts?parkCode=olym');
   return alertData.data;
+}
+
+export async function getParkVisitorCenterDetails(id) {
+  const centerData = await getJson(`visitorcenters?id=${id}`);
+  return centerData.data[0];
 }
